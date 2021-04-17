@@ -1,6 +1,12 @@
 from discord.ext import commands
 import os
 import traceback
+import random
+
+if message.content == "dice":
+    dice = random.randint(1, 6) #出る目を指定 
+    await message.send_message(message.channel, str(dice)) 
+    
 
 bot = commands.Bot(command_prefix='/')
 token = os.environ['DISCORD_BOT_TOKEN']
@@ -19,7 +25,6 @@ async def ping(ctx):
     
 @bot.command()
 async def ねこ(ctx):
-    await ctx.send('にゃ〜ん')
-    
+    await ctx.send('にゃ〜ん')   
     
 bot.run(token)
