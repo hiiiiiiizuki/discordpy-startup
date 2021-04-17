@@ -24,8 +24,7 @@ async def ねこ(ctx):
     await ctx.send('にゃ〜ん')   
     
 @bot.command()
-async def 1d6(ctx):
-    if message.content == "dice":
+await message.content == "dice":
     dice = random.randint(1, 6) #出る目を指定 
     await message.send_message(message.channel, str(dice)) 
     
