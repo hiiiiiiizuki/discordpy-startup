@@ -21,7 +21,7 @@ async def ping(ctx):
 async def ねこ(ctx):
     await ctx.send('にゃ〜ん')
     
-    
+@bot.command()
 import random #ランダムモジュール忘れずに
 
 if message.content == "dice":
