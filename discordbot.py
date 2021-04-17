@@ -21,12 +21,5 @@ async def ping(ctx):
 async def ねこ(ctx):
     await ctx.send('にゃ〜ん')
     
-@bot.command()
-import random #ランダムモジュール忘れずに
-
-if message.content == "dice":
-    dice = random.randint(1, 6) #出る目を指定 
-    await message.send_message(message.channel, str(dice))
-    
     
 bot.run(token)
